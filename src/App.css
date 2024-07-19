@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.h-custom {
+  height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+.btn-floating {
+  padding: 0.5rem 1rem;
+}
+
+.text-lg-start {
+  text-align: center !important;
+}
+
+@media (min-width: 992px) {
+  .text-lg-start {
+    text-align: start !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .offset-xl-1 {
+    margin-left: 0 !important;
+  }
+
+  .h-100 {
+    height: auto !important;
+  }
+}
+
+#sidebar {
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  width: 15%;
+}
+
+#sidebar .nav-link {
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#sidebar .nav-link:hover {
+  background-color: #f1f1f1;
+}
+
+#page-content {
+  margin-left: 15%;
+  height: 600px;
+  overflow-y: auto;
+}
+
+#page_content {
+  padding: 20px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav-link.active {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.main_page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.card {
+  border: none !important;
+}
+video{
+  border-radius: 13px;
+}
+.card-title.h5 {
+  color: var(--yt-spec-text-primary);
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  max-height: 4.4rem;
+  -webkit-line-clamp: 2;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.vide_text {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  /* line-height: 2rem; */
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  max-height: 4rem;
+  -webkit-line-clamp: 2;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: flexbox;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
