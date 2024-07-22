@@ -29,4 +29,9 @@ const _postLogin = (url, data = {}, config = {}) => {
   return apiClient.post(url, data, config);
 };
 
-export { _post, _postLogin };
+const _get = (url, config = {}) => {
+  console.log(url);
+  return apiClient.get(url, config);
+};
+
+export { _post, _postLogin, _get };

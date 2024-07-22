@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux'
 
 const Header = () => {
     const user: any = useSelector<any>(state => state.user)
-    console.log(user.avatar , "avatar")
+    console.log(user.avatar, "avatar")
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
@@ -39,7 +39,7 @@ const Header = () => {
                             <Nav.Link href="#"><FaVideo /></Nav.Link>
                             <Nav.Link href="#"><FaBell /></Nav.Link>
                             <Nav.Link href="#">
-                                {user?.avatar ? <img src="https://i.pinimg.com/280x280_RS/79/dd/11/79dd11a9452a92a1accceec38a45e16a.jpg"
+                                {user?.avatar ? <img src={user?.avatar}
                                     style={{ width: "30px", borderRadius: "50%" }} alt="sdasdasdhga" /> :
                                     <FaUserCircle size={30} />}
 
